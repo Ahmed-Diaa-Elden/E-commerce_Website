@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cebb7a0185.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./syle.css">
+  <title>Ecommerce Website</title>
+</head>
+<body>
+
+  <header id="header">
+    <a href="#"><img src="./img/logo.png" class="logo" alt="Logo"></a>
+
+    <div>
+      <ul id="navbar">
+        <li class="x-mark"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="bag-shopping"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+      </ul>
+    </div>
+    <div class="mobile-collapse">
+      <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <section id="page-header" class="about-header">
+    <h2>#let's_talk</h2>
+    <p><span class="upper">Leave a message</span> We love to hear from you!</p>
+  </section>
+
+  <section id="cart" class="section-p1">
+    <table>
+      <thead>
+        <tr>
+          <th class="cap">Remove</th>
+          <th class="cap">image</th>
+          <th class="cap">product</th>
+          <th class="cap">price</th>
+          <th class="cap">quantity</th>
+          <th class="cap">subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><a href="#"><img src="./img/products/f1.jpg" alt="image"></a></td>
+          <td class="cap">cartoon astronaut t-shirts</td>
+          <td class="s-price">$118.19</td>
+          <td><input type="number" value="1" min="1" max="20" class="quantity"></td>
+          <td class="t-price">$118.19</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><a href="#"><img src="./img/products/f2.jpg" alt="image"></a></td>
+          <td class="cap">cartoon astronaut t-shirts</td>
+          <td class="s-price">$98.80</td>
+          <td><input type="number" value="1" min="1" max="20" class="quantity"></td>
+          <td class="t-price">$98.80</td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><a href="#"><img src="./img/products/f3.jpg" alt="image"></a></td>
+          <td class="cap">cartoon astronaut t-shirts</td>
+          <td class="s-price">$124.49</td>
+          <td><input type="number" value="1" min="1" max="20" class="quantity"></td>
+          <td class="t-price">$124.49</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3 class="cap">Apply coupon</h3>
+      <div>
+        <input type="text" placeholder="Enter Your Coupon">
+        <button class="normal">Apply</button>
+      </div>
+    </div>
+
+    <div id="subtotal">
+      <h3 class="cap">cart totals</h3>
+      <table>
+        <tr>
+          <td class="cap">cart subtotal</td>
+          <td class="">$ 335</td>
+        </tr>
+        <tr>
+          <td class="cap">shipping</td>
+          <td class="">$ 0</td>
+        </tr>
+        <tr>
+          <td class="cap">total</td>
+          <td class="">$ 335</td>
+        </tr>
+      </table>
+      <button class="cap normal">Proceed to checkout</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="./img/logo.png" alt="logo">
+      <h4 class="cap">contact</h4>
+      <p class="cap"><strong>address:</strong> 562 wellington road, street 32, san fransisco</p>
+      <p class="cap"><strong>phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+      <p class="cap"><strong>hours:</strong> 10:00 - 18:00, Mon - sat</p>
+      <div class="follow">
+        <h4 class="cap">follow us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4 class="cap">about</h4>
+      <a href="#" class="cap">about us</a>
+      <a href="#" class="cap">delivery information</a>
+      <a href="#" class="cap">privacy policy</a>
+      <a href="#" class="cap">terms & conditions</a>
+      <a href="#" class="cap">contact us</a>
+    </div>
+
+    <div class="col">
+      <h4 class="cap">my account</h4>
+      <a href="#" class="cap">sign in</a>
+      <a href="#" class="cap">view cart</a>
+      <a href="#" class="cap">my wishlist</a>
+      <a href="#" class="cap">track my order</a>
+      <a href="#" class="cap">help</a>
+    </div>
+
+    <div class="col install">
+      <h4 class="cap">install app</h4>
+      <p class="cap">From App Store or Google Play</p>
+      <div class="row">
+        <img src="./img/pay/app.jpg" alt="">
+        <img src="./img/pay/play.jpg" alt="">
+      </div>
+      <p class="cap">secured payment gateways</p>
+      <img src="./img/pay/pay.png" alt="">
+    </div>
+  </footer>
+  
+  <small class="copyright section-p1 section-m1">
+    <p class="cap">	&#169; 2021, tech2 etc - HTML CSS ecommerce template</p>
+  </small>
+  <script src="./script.js"></script>
+</body>
+</html>
